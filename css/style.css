@@ -1,0 +1,126 @@
+.header--dark {
+    background-color: rgb(51, 57, 64);
+    color: rgb(236, 236, 236);
+    position: relative;
+    height: 3rem;
+}
+
+.header__title {
+    display: inline;
+    font-size: 1.25rem;
+}
+
+.header__search {
+    display: inline;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+}
+
+.search__input {
+    border-radius: 4px 0 0 4px;
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    transition: border-color .15s;
+    outline: none;
+}
+
+.search__input:focus {
+    border-color: rgb(128, 189, 255);
+}
+
+.search__btn {
+    background-color: rgb(0, 123, 255);
+    border-radius: 0 4px 4px 0;
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    margin-left: -4px;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    flex: 20%;
+}
+
+section {
+    flex: 80%;
+}
+
+.nav__ul {
+    list-style-type: none
+}
+
+.main__nav {
+    background-color: rgb(33,37,41);
+    color: rgb(236, 236, 236);
+}
+
+.main__breadcrumb {
+    background-color: rgb(233,236,239);
+    border-radius: .25rem;
+    padding: 1rem 1.5rem;
+}
+
+.main__cards {
+    display: flex;
+    height: 10rem;
+}
+
+.card__top {
+    border-radius: .25rem .25rem 0 0;
+    flex: 70%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card__bottom {
+    border-radius: 0 0 .25rem .25rem;
+    border-top: 1px solid rgba( 0, 0, 0, .1 );
+    display: flex;
+    justify-content: space-between;
+    flex: 30%;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main__card--blue {
+    background-color: rgb(0,123,255);
+    flex: 25%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__card--yellow {
+    background-color: rgb(255,193,7);
+    flex: 25%;
+    margin: 1rem;
+}
+
+.main__card--green {
+    background-color: rgb(40,167,69);
+    flex: 25%;
+    margin: 1rem;
+}
+
+.main__card--red {
+    background-color: rgb(220,53,69);
+    flex: 25%;
+    margin: 1rem;
+}
+
+.card__top,.card__bottom {
+    transition: background-color .3s;
+}
+
+.card__top:hover {
+    background-color: grey;
+}
+
+.card__bottom:hover {
+    background-color: grey;
+}
