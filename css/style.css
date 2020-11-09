@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 .header--dark {
     background-color: rgb(51, 57, 64);
     color: rgb(236, 236, 236);
@@ -97,12 +103,17 @@ a {
     color: rgb(236, 236, 236);
 }
 
+.main__card {
+    border-radius: .25rem
+}
+
 .card__top {
     border-radius: .25rem .25rem 0 0;
     flex: 70%;
     display: flex;
     align-items: center;
     padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .card__bottom {
@@ -113,6 +124,7 @@ a {
     flex: 30%;
     align-items: center;
     padding: 1rem;
+    font-size: .9rem;
 }
 
 .main__card--blue {
