@@ -8,13 +8,15 @@
 .header__title {
     display: inline;
     font-size: 1.25rem;
+    margin: 1rem;
+    line-height: 3rem;
 }
 
 .header__search {
     display: inline;
     position: absolute;
     right: 1rem;
-    top: 0.5rem;
+    top: .4rem;
 }
 
 .search__input {
@@ -32,9 +34,12 @@
 .search__btn {
     background-color: rgb(0, 123, 255);
     border-radius: 0 4px 4px 0;
-    padding: .375rem .75rem;
+    padding: .45rem .75rem;
     font-size: 1.2rem;
     margin-left: -4px;
+    margin-right: 1rem;
+    color: rgb(236, 236, 236);
+    border: 0;
 }
 
 main {
@@ -49,24 +54,47 @@ section {
     flex: 80%;
 }
 
-.nav__ul {
-    list-style-type: none
-}
-
 .main__nav {
     background-color: rgb(33,37,41);
+    padding: 2rem 0 5rem .1rem;
+    color: darkgrey;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.dashboard {
     color: rgb(236, 236, 236);
+}
+
+.dashboard a {
+    color: rgb(236, 236, 236);
+}
+
+.nav__ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.content h1 {
+    margin: 1rem;
 }
 
 .main__breadcrumb {
     background-color: rgb(233,236,239);
     border-radius: .25rem;
     padding: 1rem 1.5rem;
+    margin: 1rem;
+    color: darkgrey;
 }
 
 .main__cards {
     display: flex;
     height: 10rem;
+    color: rgb(236, 236, 236);
 }
 
 .card__top {
@@ -99,18 +127,24 @@ section {
     background-color: rgb(255,193,7);
     flex: 25%;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .main__card--green {
     background-color: rgb(40,167,69);
     flex: 25%;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .main__card--red {
     background-color: rgb(220,53,69);
     flex: 25%;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__top,.card__bottom {
